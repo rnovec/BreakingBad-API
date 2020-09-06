@@ -1,3 +1,8 @@
+/**
+ * @author Raul Novelo <raul.novelo@aaaimx.org>
+ * Ejemplo de array de datos tomados de la API de Breaking Bad:
+ * https://www.breakingbadapi.com/api/
+ */
 let cardsData = [
   {
     char_id: 1,
@@ -173,12 +178,13 @@ let cardsData = [
   }
 ]
 
+/**
+ * Ejemplo de consumo de API con fetch()
+ */
 fetch('https://www.breakingbadapi.com/api/characters?limit=10')
-    .then(function (res) {
-        return res.json()
-    })
-    .then(function (data) {
-        console.log(data)
-    });
-
-    
+  .then(function (res) {
+    return res.json()
+  })
+  .then(function (data) {
+    console.log(data)
+  })
